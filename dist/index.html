@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha384-XXX" crossorigin="anonymous">
@@ -16,28 +18,31 @@
 
     <!-- Include Daisy UI CSS (make sure to include it after Tailwind CSS) -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@1.0.0/dist/full.css" rel="stylesheet">
+
+
 </head>
 
 <body class="bg-gray-100">
 
+
     <!-- Top Black Section -->
-   <!-- Top Part of the Site -->
-<div class="bg-white text-black p-4 flex items-center justify-between">
-    <!-- Title on the Left -->
-    <h1 class="text-2xl font-bold">Hockey's</h1>
+    <!-- Top Part of the Site -->
+    <div class="bg-white text-black p-4 flex items-center justify-between">
+        <!-- Title on the Left -->
+        <h1 class="text-2xl font-bold">Hockey's</h1>
 
-    <!-- Navigation in the Center -->
-    <nav class="flex">
-        <a href="#" class="mx-2">Home</a>
-        <a href="#" class="mx-2">About</a>
-        <a href="#" class="mx-2">Pages</a>
-        <a href="#" class="mx-2">Blog</a>
-        <a href="#" class="mx-2">Contact</a>
-    </nav>
+        <!-- Navigation in the Center -->
+        <nav class="flex">
+            <a href="#" class="mx-2">Home</a>
+            <a href="#" class="mx-2">About</a>
+            <a href="#" class="mx-2">Pages</a>
+            <a href="#" class="mx-2">Blog</a>
+            <a href="#" class="mx-2">Contact</a>
+        </nav>
 
-    <!-- Get Ticket Button on the Right -->
-    <button class="bg-red-600 text-white px-4 py-2 rounded-md">Get Ticket</button>
-</div>
+        <!-- Get Ticket Button on the Right -->
+        <button class="bg-red-600 text-white px-4 py-2 rounded-md">Get Ticket</button>
+    </div>
 
 
     <!-- Banner Section -->
@@ -63,40 +68,43 @@
     </div>
 
 
-    <!-- Radial Percentage Section -->
-    <div class="container mx-auto my-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <!-- Red -->
-            <div class="flex flex-col items-center">
+<!-- Radial Percentage Section -->
+<div class="container mx-auto my-8 flex justify-between">
 
-                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center">
-
-                    <p class="text-white">25%</p>
-                </div>
-                <p class="mt-2">Red</p>
-            </div>
-            <!-- Green -->
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
-                    <p class="text-white">50%</p>
-                </div>
-                <p class="mt-2">Green</p>
-            </div>
-            <!-- Yellow -->
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center">
-                    <p class="text-white">75%</p>
-                </div>
-                <p class="mt-2">Yellow</p>
-            </div>
-            <!-- Blue -->
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
-                    <p class="text-white">100%</p>
-                </div>
-                <p class="mt-2">Blue</p>
-            </div>
+    <div class="m-8 text-center">
+        <div class="flex flex-col items-center">
+            <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+            <p class="mt-2">Prayer Facilities</p>
         </div>
+    </div>
+
+    <div class="m-8 text-center">
+        <div class="flex flex-col items-center">
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+            <p class="mt-2">Experienced Coach</p>
+        </div>
+    </div>
+
+    <div class="m-8 text-center">
+        <div class="flex flex-col items-center">
+            <div class="radial-progress text-primary" style="--value:95;" role="progressbar">95%</div>
+            <p class="mt-2">Senior Player</p>
+        </div>
+    </div>
+
+    <div class="m-8 text-center">
+        <div class="flex flex-col items-center">
+            <div class="radial-progress text-primary" style="--value:87;" role="progressbar">87%</div>
+            <p class="mt-2">Training Ground</p>
+        </div>
+    </div>
+
+</div>
+
+        <!-- Blue -->
+        
+    </div>
+    </div>
     </div>
 
     <!-- Image Card Section -->
@@ -117,7 +125,7 @@
                 <button class="btn btn-primary mt-4">Register Now!</button>
             </div>
             <!-- Card 3 -->
-          
+
         </div>
         <div class="card p-4">
             <img src="4.png" alt="Card Image 3" class="w-full h-32 object-cover mb-4">
@@ -135,125 +143,161 @@
     </div>
 
     <!-- Small Product Cards Section -->
-  <!-- Small Product Cards Section -->
-<!-- Small Product Cards Section -->
-<div class="container mx-auto my-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- Product Card 1 -->
-        <div class="card p-4">
-            <img src="5.png" alt="Product Image 1" class="w-full h-32 object-cover mb-2">
-            <div class="flex items-center mb-2">
-                <!-- Replace with your rating component -->
-                <p class="text-yellow-500 mr-2">⭐ 5.0</p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-700">(20)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z"/>
-                </svg>
-                <span class="text-gray-700">(200)</span>
+    <!-- Small Product Cards Section -->
+    <!-- Small Product Cards Section -->
+    <div class="container mx-auto my-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Product Card 1 -->
+            <div class="card p-4">
+                <img src="5.png" alt="Product Image 1" class="w-full h-32 object-cover mb-2">
+                <div class="flex items-center mb-2">
+                    <!-- Replace with your rating component -->
+                    <p class="text-yellow-500 mr-2">⭐ 5.0</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">(20)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z" />
+                    </svg>
+                    <span class="text-gray-700">(200)</span>
+                </div>
+                <h2 class="text-lg font-bold mb-2">World cup jacket 1</h2>
+                <p class="text-sm text-gray-500">Premium jacket for the ultimate fan. Stay warm and stylish during the
+                    match!</p>
+                <p class="text-lg font-bold mt-2">$22</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">World cup jacket 1</h2>
-            <p class="text-sm text-gray-500">Premium jacket for the ultimate fan. Stay warm and stylish during the match!</p>
-            <p class="text-lg font-bold mt-2">$22</p>
-        </div>
-        <!-- Product Card 2 -->
-        <div class="card p-4">
-            <img src="6.png" alt="Product Image 2" class="w-full h-32 object-cover mb-2">
-            <div class="flex items-center mb-2">
-                <p class="text-yellow-500 mr-2">⭐</p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-700">(15)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z"/>
-                </svg>
-                <span class="text-gray-700">(100)</span>
+            <!-- Product Card 2 -->
+            <div class="card p-4">
+                <img src="6.png" alt="Product Image 2" class="w-full h-32 object-cover mb-2">
+                <div class="flex items-center mb-2">
+                    <p class="text-yellow-500 mr-2">⭐</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">(15)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z" />
+                    </svg>
+                    <span class="text-gray-700">(100)</span>
+                </div>
+                <h2 class="text-lg font-bold mb-2">World cup football 2</h2>
+                <p class="text-sm text-gray-500">Official match football used in the world cup. Durable and designed for
+                    peak performance.</p>
+                <p class="text-lg font-bold mt-2">$35</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">World cup football 2</h2>
-            <p class="text-sm text-gray-500">Official match football used in the world cup. Durable and designed for peak performance.</p>
-            <p class="text-lg font-bold mt-2">$35</p>
-        </div>
-        <!-- Product Card 3 -->
-        <div class="card p-4">
-            <img src="7.png" alt="Product Image 3" class="w-full h-32 object-cover mb-2">
-            <div class="flex items-center mb-2">
-                <p class="text-yellow-500 mr-2">⭐</p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-700">(12)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z"/>
-                </svg>
-                <span class="text-gray-700">(150)</span>
+            <!-- Product Card 3 -->
+            <div class="card p-4">
+                <img src="7.png" alt="Product Image 3" class="w-full h-32 object-cover mb-2">
+                <div class="flex items-center mb-2">
+                    <p class="text-yellow-500 mr-2">⭐</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">(12)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z" />
+                    </svg>
+                    <span class="text-gray-700">(150)</span>
+                </div>
+                <h2 class="text-lg font-bold mb-2">Cap</h2>
+                <p class="text-sm text-gray-500">Stylish cap with the official world cup logo. Shield your eyes and show
+                    your team pride!</p>
+                <p class="text-lg font-bold mt-2">$18</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">Cap</h2>
-            <p class="text-sm text-gray-500">Stylish cap with the official world cup logo. Shield your eyes and show your team pride!</p>
-            <p class="text-lg font-bold mt-2">$18</p>
-        </div>
 
-        <!-- Product Card 4 -->
+            <!-- Product Card 4 -->
 
-       <div class="card p-4">
-            <img src="8.png" alt="Product Image 4" class="w-full h-32 object-cover mb-2">
-            <div class="flex items-center mb-2">
-                <p class="text-yellow-500 mr-2">⭐</p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-700">(25)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z"/>
-                </svg>
-                <span class="text-gray-700">(180)</span>
+            <div class="card p-4">
+                <img src="8.png" alt="Product Image 4" class="w-full h-32 object-cover mb-2">
+                <div class="flex items-center mb-2">
+                    <p class="text-yellow-500 mr-2">⭐</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">(25)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z" />
+                    </svg>
+                    <span class="text-gray-700">(180)</span>
+                </div>
+                <h2 class="text-lg font-bold mb-2">Jersey</h2>
+                <p class="text-sm text-gray-500">Authentic team jersey. Breathable fabric for maximum comfort during the
+                    game.</p>
+                <p class="text-lg font-bold mt-2">$30</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">Jersey</h2>
-            <p class="text-sm text-gray-500">Authentic team jersey. Breathable fabric for maximum comfort during the game.</p>
-            <p class="text-lg font-bold mt-2">$30</p>
-        </div>
 
-        <!-- Product Card 5 -->
-       <div class="card p-4">
-            <img src="9.png" alt="Product Image 5" class="w-full h-32 object-cover mb-2">
-            <div class="flex items-center mb-2">
-                <p class="text-yellow-500 mr-2">⭐</p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-700">(18)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z"/>
-                </svg>
-                <span class="text-gray-700">(120)</span>
+            <!-- Product Card 5 -->
+            <div class="card p-4">
+                <img src="9.png" alt="Product Image 5" class="w-full h-32 object-cover mb-2">
+                <div class="flex items-center mb-2">
+                    <p class="text-yellow-500 mr-2">⭐</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">(18)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z" />
+                    </svg>
+                    <span class="text-gray-700">(120)</span>
+                </div>
+                <h2 class="text-lg font-bold mb-2">Helmet</h2>
+                <p class="text-sm text-gray-500">Protective helmet designed for players. Lightweight and durable for a
+                    safe game.</p>
+                <p class="text-lg font-bold mt-2">$25</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">Helmet</h2>
-            <p class="text-sm text-gray-500">Protective helmet designed for players. Lightweight and durable for a safe game.</p>
-            <p class="text-lg font-bold mt-2">$25</p>
-        </div>
-        <!-- Product Card 6 -->
-        <div class="card p-4">
-            <img src="10.png" alt="Product Image 6" class="w-full h-32 object-cover mb-2">
-            <div class="flex items-center mb-2">
-                <p class="text-yellow-500 mr-2">⭐</p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-700">(18)</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z"/>
-                </svg>
-                <span class="text-gray-700">(120)</span>
-            </div>
-            <h2 class="text-lg font-bold mb-2">Football</h2>
-            <p class="text-sm text-gray-500">High-quality football suitable for all levels. Great for training sessions or friendly matches.</p>
-                        <p class="text-lg font-bold mt-2">$25</p>
+            <!-- Product Card 6 -->
+            <div class="card p-4">
+                <img src="10.png" alt="Product Image 6" class="w-full h-32 object-cover mb-2">
+                <div class="flex items-center mb-2">
+                    <p class="text-yellow-500 mr-2">⭐</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2C5.03 2 1 6.03 1 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">(18)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 text-red-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M10 18l-1.45-1.32C5.4 12.36 2 9.28 2 6.5 2 3.42 4.42 1 7.5 1c1.74 0 3.41.81 4.5 2.09C14.09 1.81 15.76 1 17.5 1 20.54 1 24 4.46 24 7.5c0 2.78-3.4 5.86-6.55 10.18L10 18z" />
+                    </svg>
+                    <span class="text-gray-700">(120)</span>
+                </div>
+                <h2 class="text-lg font-bold mb-2">Football</h2>
+                <p class="text-sm text-gray-500">High-quality football suitable for all levels. Great for training
+                    sessions or friendly matches.</p>
+                <p class="text-lg font-bold mt-2">$25</p>
 
+            </div>
         </div>
     </div>
-</div>
 
 
 
@@ -268,29 +312,29 @@
 
 
 
-<!-- Equipment Section with Image on the Left -->
-<div class="container mx-auto my-8 flex items-center">
-    <!-- Image on the Left -->
-    <img src="11.png" alt="Equipment Image" class="w-1/2 h-auto object-cover rounded-md mr-8 max-w-min">
+    <!-- Equipment Section with Image on the Left -->
+    <div class="container mx-auto my-8 flex items-center">
+        <!-- Image on the Left -->
+        <img src="11.png" alt="Equipment Image" class="w-1/2 h-auto object-cover rounded-md mr-8 max-w-min">
 
-    <!-- Text Content on the Right -->
-    <div>
-        <h2 class="text-3xl font-bold mb-4">Our Equipment</h2>
-        <br>
-        <p>We provide the best service.</p>
+        <!-- Text Content on the Right -->
+        <div>
+            <h2 class="text-3xl font-bold mb-4">Our Equipment</h2>
+            <br>
+            <p>We provide the best service.</p>
 
-        <h2 class="text-3xl font-bold mt-8">Hockey Training</h2>
-        <br>
-        <p>Private Lessons</p>
-        <br>
-        <p>Ski Touring</p>
-        <br>
-        <p>Booking</p>
-        <br>
-        <p>Pricings</p>
-        <br>
+            <h2 class="text-3xl font-bold mt-8">Hockey Training</h2>
+            <br>
+            <p>Private Lessons</p>
+            <br>
+            <p>Ski Touring</p>
+            <br>
+            <p>Booking</p>
+            <br>
+            <p>Pricings</p>
+            <br>
+        </div>
     </div>
-</div>
 
 
 
@@ -308,8 +352,8 @@
     <div class="container mx-auto my-8">
 
 
-        
-        
+
+
     </div>
 
 
@@ -325,10 +369,10 @@
 
                 <form class="max-w-md mx-auto">
 
-            
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        
-                        
+
+
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                             <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
@@ -355,32 +399,32 @@
                 </form>
             </form>
         </div>
-    
+
         <!-- New Contact Information Cards on the Right -->
         <div class="bg-gray-100 p-4 rounded-md ml-8 flex flex-col">
             <!-- Card 1: Phone -->
             <div class="bg-yellow-300 p-6 rounded-md mb-4 flex items-center">
                 <img src="Group 1171275317.png" alt="Phone Icon" class="h-8 w-8 mr-2">
-                <span class="text-gray-800">Phone Number : 
+                <span class="text-gray-800">Phone Number :
                     (+62) 123-321-543</span>
             </div>
-        
+
             <!-- Card 2: Email -->
             <div class="bg-green-300 p-6 rounded-md mb-4 flex items-center">
                 <img src="Group 1171275318.png" alt="Email Icon" class="h-8 w-8 mr-2">
-                <span class="text-gray-800">Email : 
+                <span class="text-gray-800">Email :
                     hockeys@support.com</span>
             </div>
-        
+
             <!-- Card 3: Location -->
             <div class="bg-blue-300 p-6 rounded-md flex items-center">
                 <img src="Group 1171275321.png" alt="Location Icon" class="h-8 w-8 mr-2">
-                <span class="text-gray-800">Location : 
+                <span class="text-gray-800">Location :
                     152/1 Mohakhali Wireless Gate</span>
             </div>
         </div>
-        
-        
+
+
     </div>
 
 
