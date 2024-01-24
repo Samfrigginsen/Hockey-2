@@ -101,7 +101,7 @@
 
     <!-- Image Card Section -->
     <div class="container mx-auto my-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Card 1 -->
             <div class="card p-4">
                 <img src="2.png" alt="Card Image 1" class="w-full h-32 object-cover mb-4">
@@ -117,12 +117,13 @@
                 <button class="btn btn-primary mt-4">Register Now!</button>
             </div>
             <!-- Card 3 -->
-            <div class="card p-4">
-                <img src="4.png" alt="Card Image 3" class="w-full h-32 object-cover mb-4">
-                <h2 class="text-lg font-bold mb-2">Professional Program</h2>
-                <p>Turn that sport into a career.</p>
-                <button class="btn btn-primary mt-4">Register Now!</button>
-            </div>
+          
+        </div>
+        <div class="card p-4">
+            <img src="4.png" alt="Card Image 3" class="w-full h-32 object-cover mb-4">
+            <h2 class="text-lg font-bold mb-2">Professional Program</h2>
+            <p>Turn that sport into a career.</p>
+            <button class="btn btn-primary mt-4">Register Now!</button>
         </div>
     </div>
 
@@ -253,33 +254,87 @@
 
     <!-- Contact Us Section -->
     <div class="container mx-auto my-8">
-        <form class="max-w-md mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
-                </div>
-                <div class="mb-4">
-                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
-                    <input type="text" id="subject" name="subject" class="mt-1 p-2 w-full border rounded-md">
-                </div>
-                <div class="mb-4">
-                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                    <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border rounded-md">
-                </div>
-            </div>
-            <div class="mb-4">
-                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                <textarea id="message" name="message" class="w-full p-2 border rounded-md" rows="4"
-                    placeholder="Your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-red">Send Message</button>
-        </form>
+
+
+        
+        
     </div>
+
+
+
+
+
+
+    <div class="container mx-auto my-8 flex">
+        <!-- Existing Contact Form on the Left -->
+        <div class="flex-1">
+            <form class="max-w-md mx-auto">
+                <!-- Your existing form code here -->
+
+                <form class="max-w-md mx-auto">
+
+            
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+                        
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                            <input type="text" id="subject" name="subject" class="mt-1 p-2 w-full border rounded-md">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border rounded-md">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" class="w-full p-2 border rounded-md" rows="4"
+                            placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-red">Send Message</button>
+                </form>
+            </form>
+        </div>
+    
+        <!-- New Contact Information Cards on the Right -->
+        <div class="bg-gray-100 p-4 rounded-md ml-8 flex flex-col">
+            <!-- Card 1: Phone -->
+            <div class="bg-yellow-300 p-6 rounded-md mb-4 flex items-center">
+                <img src="Group 1171275317.png" alt="Phone Icon" class="h-8 w-8 mr-2">
+                <span class="text-gray-800">Phone: +1 (555) 123-4567</span>
+            </div>
+        
+            <!-- Card 2: Email -->
+            <div class="bg-green-300 p-6 rounded-md mb-4 flex items-center">
+                <img src="Group 1171275318.png" alt="Email Icon" class="h-8 w-8 mr-2">
+                <span class="text-gray-800">Email: info@example.com</span>
+            </div>
+        
+            <!-- Card 3: Location -->
+            <div class="bg-blue-300 p-6 rounded-md flex items-center">
+                <img src="Group 1171275321.png" alt="Location Icon" class="h-8 w-8 mr-2">
+                <span class="text-gray-800">Location: City, Country</span>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+
+
+
+
+
+
 
     <!-- Social Media Box -->
 
