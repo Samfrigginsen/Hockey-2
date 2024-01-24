@@ -1,12 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-XXX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-XXX" crossorigin="anonymous">
 
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -14,27 +17,51 @@
     <!-- Include Daisy UI CSS (make sure to include it after Tailwind CSS) -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@1.0.0/dist/full.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-100">
 
     <!-- Top Black Section -->
-    <div class="bg-white text-black py-4">
-        <div class="container mx-auto text-center">
-            <h1 class="text-2xl font-bold; " >Hockey's</h1>
-        </div>
-    </div>
+   <!-- Top Part of the Site -->
+<div class="bg-white text-black p-4 flex items-center justify-between">
+    <!-- Title on the Left -->
+    <h1 class="text-2xl font-bold">Hockey's</h1>
+
+    <!-- Navigation in the Center -->
+    <nav class="flex">
+        <a href="#" class="mx-2">Home</a>
+        <a href="#" class="mx-2">About</a>
+        <a href="#" class="mx-2">Pages</a>
+        <a href="#" class="mx-2">Blog</a>
+        <a href="#" class="mx-2">Contact</a>
+    </nav>
+
+    <!-- Get Ticket Button on the Right -->
+    <button class="bg-red-600 text-white px-4 py-2 rounded-md">Get Ticket</button>
+</div>
+
 
     <!-- Banner Section -->
+
+
+
     <div class="relative h-screen flex items-center justify-center">
         <!-- Scrollable Images with Text Box -->
-        <div class="relative">
-            <img src="image1.jpg" alt="Banner Image 1" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-black">
-                <h1 class="text-4xl font-bold mb-4">Welcome to Your Website</h1>
-                <p class="text-lg">This is a simple and responsive website.</p>
+        <div class="relative overflow-hidden rounded-md">
+            <img src="1.png" alt="Banner Image 1" class="w-full h-full object-cover rounded-md">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h1 class="text-4xl font-bold mb-4 text-left">Meet all the heroes from the world</h1>
+                <p class="text-lg text-left">Welcome to our site</p>
             </div>
         </div>
     </div>
+
+    <div>
+        <br>
+        <h2 class="text-2xl font-bold mb-4 text-center">Professional Hockeys Club </h2>
+        <p class="text-center">We are here to guide you with your journey of hockey.</p>
+        <b></b>
+    </div>
+
 
     <!-- Radial Percentage Section -->
     <div class="container mx-auto my-8">
@@ -43,7 +70,7 @@
             <div class="flex flex-col items-center">
 
                 <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center">
-                    
+
                     <p class="text-white">25%</p>
                 </div>
                 <p class="mt-2">Red</p>
@@ -99,160 +126,220 @@
         </div>
     </div>
 
+    <div>
+        <br>
+        <h2 class="text-2xl font-bold mb-4 text-center">Our New Products</h2>
+        <p class="text-center">Check out our new products.</p>
+        <b></b>
+    </div>
+
     <!-- Small Product Cards Section -->
-    <div class="container mx-auto my-8">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <!-- Product Card 1 -->
-            <div class="card p-4">
-                <img src="5.png" alt="Product Image 1" class="w-full h-32 object-cover mb-2">
-                <div class="flex items-center mb-2">
-                    <!-- Replace with your rating component -->
-                    <p class="text-yellow-500 mr-2">⭐⭐⭐⭐⭐</p>
-                    <p class="text-gray-700">(10 reviews)</p>
-                </div>
-                <h2 class="text-lg font-bold mb-2">Product 1</h2>
-                <p>Description of the product.</p>
+  <!-- Small Product Cards Section -->
+<!-- Small Product Cards Section -->
+<div class="container mx-auto my-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Product Card 1 -->
+        <div class="card p-4">
+            <img src="5.png" alt="Product Image 1" class="w-full h-32 object-cover mb-2">
+            <div class="flex items-center mb-2">
+                <!-- Replace with your rating component -->
+                <p class="text-yellow-500 mr-2">⭐⭐⭐⭐⭐</p>
+                <p class="text-gray-700">(Delivery Fee Free)</p>
             </div>
-            <!-- Product Card 2 -->
-            <div class="card p-4">
-                <img src="6.png" alt="Product Image 2" class="w-full h-32 object-cover mb-2">
-                <div class="flex items-center mb-2">
-                    <p class="text-yellow-500 mr-2">⭐⭐⭐⭐</p>
-                    <p class="text-gray-700">(5 reviews)</p>
-                </div>
-                <h2 class="text-lg font-bold mb-2">Product 2</h2>
-                <p>Description of the second product.</p>
+            <h2 class="text-lg font-bold mb-2">World cup jacket 1</h2>
+            <p class="text-sm text-gray-500">Premium jacket for the ultimate fan. Stay warm and stylish during the match!</p>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="card p-4">
+            <img src="6.png" alt="Product Image 2" class="w-full h-32 object-cover mb-2">
+            <div class="flex items-center mb-2">
+                <p class="text-yellow-500 mr-2">⭐⭐⭐⭐</p>
+                <p class="text-gray-700">(Delivery Fee Free)</p>
             </div>
-            <!-- Product Card 3 -->
-            <div class="card p-4">
-                <img src="7.png" alt="Product Image 3" class="w-full h-32 object-cover mb-2">
-                <div class="flex items-center mb-2">
-                    <p class="text-yellow-500 mr-2">⭐⭐⭐⭐⭐</p>
-                    <p class="text-gray-700">(12 reviews)</p>
-                </div>
-                <h2 class="text-lg font-bold mb-2">Product 3</h2>
-                <p>Description ofthe third product.</p>
+            <h2 class="text-lg font-bold mb-2">World cup football 2</h2>
+            <p class="text-sm text-gray-500">Official match football used in the world cup. Durable and designed for peak performance.</p>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="card p-4">
+            <img src="7.png" alt="Product Image 3" class="w-full h-32 object-cover mb-2">
+            <div class="flex items-center mb-2">
+                <p class="text-yellow-500 mr-2">⭐⭐⭐⭐⭐</p>
+                <p class="text-gray-700">(Delivery Fee Free)</p>
             </div>
-            <!-- Product Card 4 -->
-            <div class="card p-4">
+            <h2 class="text-lg font-bold mb-2">Cap</h2>
+            <p class="text-sm text-gray-500">Stylish cap with the official world cup logo. Shield your eyes and show your team pride!</p>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="card p-4">
             <img src="8.png" alt="Product Image 4" class="w-full h-32 object-cover mb-2">
             <div class="flex items-center mb-2">
-            <p class="text-yellow-500 mr-2">⭐⭐⭐⭐⭐</p>
-            <p class="text-gray-700">(8 reviews)</p>
+                <p class="text-yellow-500 mr-2">⭐⭐⭐⭐⭐</p>
+                <p class="text-gray-700">(Delivery Fee Free)</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">Product 4</h2>
-            <p>Description of the fourth product.</p>
-            </div>
-            <!-- Product Card 5 -->
-            <div class="card p-4">
+            <h2 class="text-lg font-bold mb-2">Jersey</h2>
+            <p class="text-sm text-gray-500">Authentic team jersey. Breathable fabric for maximum comfort during the game.</p>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="card p-4">
             <img src="9.png" alt="Product Image 5" class="w-full h-32 object-cover mb-2">
             <div class="flex items-center mb-2">
-            <p class="text-yellow-500 mr-2">⭐⭐⭐⭐</p>
-            <p class="text-gray-700">(6 reviews)</p>
+                <p class="text-yellow-500 mr-2">⭐⭐⭐⭐</p>
+                <p class="text-gray-700">(Delivery Fee Free)</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">Product 5</h2>
-            <p>Description of the fifth product.</p>
-            </div>
-            <!-- Product Card 6 -->
-            <div class="card p-4">
+            <h2 class="text-lg font-bold mb-2">Helmet</h2>
+            <p class="text-sm text-gray-500">Protective helmet designed for players. Lightweight and durable for a safe game.</p>
+        </div>
+        <!-- Product Card 6 -->
+        <div class="card p-4">
             <img src="10.png" alt="Product Image 6" class="w-full h-32 object-cover mb-2">
             <div class="flex items-center mb-2">
-            <p class="text-yellow-500 mr-2">⭐⭐⭐</p>
-            <p class="text-gray-700">(3 reviews)</p>
+                <p class="text-yellow-500 mr-2">⭐⭐⭐</p>
+                <p class="text-gray-700">(Delivery Fee Free)</p>
             </div>
-            <h2 class="text-lg font-bold mb-2">Product 6</h2>
-            <p>Description of the sixth product.</p>
-            </div>
-            </div>
-            </div>
-
-
-
-
-
-<!-- Contact Us Section -->
-<div class="container mx-auto my-8">
-    <form class="max-w-md mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="mb-4">
-                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
-            </div>
-            <div class="mb-4">
-                <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
-                <input type="text" id="subject" name="subject" class="mt-1 p-2 w-full border rounded-md">
-            </div>
-            <div class="mb-4">
-                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border rounded-md">
-            </div>
+            <h2 class="text-lg font-bold mb-2">Football</h2>
+            <p class="text-sm text-gray-500">High-quality football suitable for all levels. Great for training sessions or friendly matches.</p>
         </div>
-        <div class="mb-4">
-            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-            <textarea id="message" name="message" class="w-full p-2 border rounded-md" rows="4" placeholder="Your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-red">Send Message</button>
-    </form>
-</div>
-
-<!-- Social Media Box -->
-<div class="bg-gray-800 text-white p-4">
-    <div class="flex items-center space-x-4">
-        <!-- Replace the icons and links with your social media details -->
-        <a href="#" class="text-xl"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="text-xl"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
-        <!-- Add more social media icons as needed -->
     </div>
 </div>
 
-<!-- Footer Section -->
-<footer class="bg-gray-900 text-white p-8">
-    <div class="flex justify-between">
-        <!-- Company Section -->
-        <div>
-            <h3 class="font-bold text-xl mb-4">Company</h3>
-            <ul>
-                <li>About Us</li>
-                <li>Leadership</li>
-                <li>Careers</li>
-                <li>News and Articles</li>
-                <li>Legal Notice</li>
-            </ul>
-        </div>
-        <!-- Support Section -->
-        <div>
-            <h3 class="font-bold text-xl mb-4">Support</h3>
-            <ul>
-                <li>Help Center</li>
-                <li>FAQ</li>
-                <li>Ticket Support</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-        <!-- Services Section -->
-        <div>
-            <h3 class="font-bold text-xl mb-4">Services</h3>
-            <ul>
-                <li>Academy</li>
-                <li>Group Lessons</li>
-                <li>Private Lessons</li>
-                <li>Hockey for Kids</li>
-                <li>Hockey for Adults</li>
-            </ul>
-        </div>
+
+
+
+
+    <div>
+        <br>
+        <h2 class="text-2xl font-bold mb-4 text-center">Client question</h2>
+        <p class="text-center">Contact us for all your hockey queries!.</p>
+        <b></b>
     </div>
-    <!-- Get in Touch Section -->
-    <div class="mt-8">
-        <h4 class="font-bold text-lg">Get in Touch</h4>
-        <p>Contact us anytime.</p>
-        <p>Email: Hockey@aemail.com</p>
-        <p>Phone: +1 (123) 456-7890</p>
+
+
+
+<!-- Equipment Section with Image on the Left -->
+<div class="container mx-auto my-8 flex items-center">
+    <!-- Image on the Left -->
+    <img src="11.png" alt="Equipment Image" class="w-1/2 h-auto object-cover rounded-md mr-8 max-w-min">
+
+    <!-- Text Content on the Right -->
+    <div>
+        <h2 class="text-3xl font-bold mb-4">Our Equipment</h2>
+        <br>
+        <p>We provide the best service.</p>
+
+        <h2 class="text-3xl font-bold mt-8">Hockey Training</h2>
+        <br>
+        <p>Private Lessons</p>
+        <br>
+        <p>Ski Touring</p>
+        <br>
+        <p>Booking</p>
+        <br>
+        <p>Pricings</p>
+        <br>
     </div>
-</footer>
+</div>
+
+
+
+
+
+    <div>
+        <br>
+        <h2 class="text-2xl font-bold mb-4 text-center">Get In Touch</h2>
+        <p class="text-center">Reach out to us for all your hockey needs!.</p>
+        <br>
+    </div>
+
+
+    <!-- Contact Us Section -->
+    <div class="container mx-auto my-8">
+        <form class="max-w-md mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                    <input type="text" id="subject" name="subject" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" class="w-full p-2 border rounded-md" rows="4"
+                    placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-red">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Social Media Box -->
+
+
+
+    <div>
+        <br>
+        <h3 style="text-align: center;">Social Media</h3>
+        <img src="Social.png" alt="Social Media Icon" class="mx-auto my-4" style="max-width: 300px;">
+        <br>
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white p-8">
+        <div class="flex justify-between">
+
+            <div class="mt-8">
+                <h4 class="font-bold text-lg">Get in Touch</h4>
+                <p>Contact us anytime.</p>
+                <p>Email: Hockey@aemail.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <!-- Company Section -->
+            <div>
+                <h3 class="font-bold text-xl mb-4">Company</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Leadership</li>
+                    <li>Careers</li>
+                    <li>News and Articles</li>
+                    <li>Legal Notice</li>
+                </ul>
+            </div>
+            <!-- Support Section -->
+            <div>
+                <h3 class="font-bold text-xl mb-4">Support</h3>
+                <ul>
+                    <li>Help Center</li>
+                    <li>FAQ</li>
+                    <li>Ticket Support</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <!-- Services Section -->
+            <div>
+                <h3 class="font-bold text-xl mb-4">Services</h3>
+                <ul>
+                    <li>Academy</li>
+                    <li>Group Lessons</li>
+                    <li>Private Lessons</li>
+                    <li>Hockey for Kids</li>
+                    <li>Hockey for Adults</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Get in Touch Section -->
+
+    </footer>
 </body>
+
 </html>
